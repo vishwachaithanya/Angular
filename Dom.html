@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Dom</title>
+    </head>
+    <body>
+	<div id="second">
+	<h1 class="v">This is vishwachaithanya</h1>
+    <h2 class="v">This is vishwachaithanya</h2>
+	<h3 id="c"></h3>
+	<h4 id="mb">mb</h4>
+	<h4 id="ss">superstar</h4>
+	</div>
+	<script>
+	var v=document.getElementById("c");
+	console.log(v);
+	var c=document.getElementsByClassName("v") //html collection
+	document.write(c)
+	console.log(c)
+	var c1=document.querySelector(".v")//returns the first matching object
+	console.log(c1)
+	var c2=document.querySelectorAll(".v")//nodelist
+	console.log(c2)
+	var c4=document.querySelector("h3").innerHTML="vc"
+	console.log(c4);
+	<!--creation of element usng dom-->
+	var n=document.createElement('p')
+	n.innerText="vishwachaithanya"
+	var parent=document.getElementById("second")
+	parent.appendChild(n)
+	
+console.log(parent.innerHTML)//Gives Entire tag
+console.log(parent.innerText)//gives only content
+
+<!-- adjusting the position of newly created element-->
+var last=document.getElementById("c")
+var n1=document.createElement("h4")
+n1.innerText="fan of mb"
+parent.insertBefore(n1,last)
+<!--removing the element -->
+var rem=document.getElementById("mb")
+rem.remove()
+
+<!--var p=document.getElementById("mb")-->
+//var ch=document.getElementById("ss")
+//p.removeChild(ch)
+
+var m=document.createElement("P")
+m.innerText="ms dhoni"
+var k=document.getElementById("mb")
+k.replaceChildren(m)
+
+	
+	</script>
+
+    </body>
+  </html>
+

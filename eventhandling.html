@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>event handling</title>
+    </head>
+    <body>
+	<script >
+	var a = 30,b=20,c=100;
+	document.writeln(a>b?"Hi":"hELLO");
+	
+	document.writeln(a>b?(a>c?a:c):(b>c?b:c));
+		function vForm()
+		{
+			alert("Submitted");
+		}
+	function he(){
+	var a = 10;
+	if(a==10)
+	{
+		window.c=101;
+	}
+	document.write(c);
+	document.write(19);
+	}
+	he();
+	
+	function bigI(a){
+	a.style.height="64px";
+	a.style.width="64px";
+	}
+	
+	function normalI(b){
+	b.style.height="32px";
+	b.style.width="32px";
+	}
+	var s=document.f1.fname.value;
+	document.write(s);
+	</script>
+	<!--<a href="https://www.google.com" onClick="alert('are you okay')">g</a>-->
+	
+	<form name="f1" method="get" onSubmit="return vForm();">
+	First Name:
+	<input type="text" name="fname"><br>
+	Last Name:
+	<input type="text" name="lname"><br>
+	  
+	<input type="submit" value="submit">
+	</form>
+	
+	<img src="D:\HTML\S.jpg" onmouseover="bigI(this)" onmouseout="normalI(this)" width="32" height="32">
+	
+	
+    </body>
+	
+  </html>
+

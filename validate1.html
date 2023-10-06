@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>validate</title>
+    </head>
+    <body>
+    <form name="myform" id="vc" method="post" onsubmit="return res()">
+    Name:<input type="text" name="name" id="v">
+    Pwd:<input type="password" name="pwd">
+	<input type="submit">
+    	
+    </body> 
+	<script>
+	function res()
+	{
+	//var name=document.myform.name.value;
+	var name=document.getElementById("v").value;
+	console.log(name);
+	var pwd=document.myform.pwd.value;
+	console.log(pwd);
+	return false;
+	}
+	var b=function res1(num1=8,num2=9)
+	{
+	return num1+num2;
+	
+	}
+	document.write(b());
+	
+	
+	var obj={"name":"vishwa", "age":"18"};
+	document.write(obj.name);
+	document.write(obj["name"]);
+	
+	for(let x in obj)
+	{
+	 console.log(obj[x]);
+	}
+	var b=["hello","vc"];
+	for(let x in b)
+	{
+	 console.log(b[x]);
+	}
+	b.forEach((value,key)=>console.log(value));
+	
+	let arr=[1,2,3,4];
+	let c=arr.map((val)=>{
+	return val*val;
+	}
+	)
+	console.log(c);
+
+	console.log([1,2,3,4].map((val,key )=>{
+	return key*key;
+	}
+	)
+	)
+	
+	function name(){
+	document.write("vishwa")
+	}
+	function name1(){
+	document.write("vish")
+	}
+	//setTimeout(name,1000);
+	setInterval(name,3000);
+	setTimeout(name1,5000);
+	
+	var obj1={"name":"vishwa", "age":"18"};
+	Object.keys(obj1).forEach((key,value)=>{
+		console.log(key);
+		console.log(obj1[key]);
+	
+	})
+	
+	
+	
+	
+	</script>
+  </html>
+
